@@ -1,2 +1,2 @@
 print(145 + '234')
-print('Meu nome é:' + 'André')
+print('234' + 145)
