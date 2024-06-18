@@ -21,4 +21,3 @@ dicionario = {
     'nome': "vini",
     'idade': 25
 }
-print(dicionario(Nome))
