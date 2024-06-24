@@ -10,14 +10,9 @@ match operacao:
     case 'multiplicacao':
         resultado = num1 * num2
     case 'divisao':
-        if num1 != 0:
-            resultado = num1 / num2
-        else:
-            resultado = float('inf')
+        resultado = num1 / num2        
     case _:
         resultado = 'Operação inválida'
 
 
 print(f"Resultado da {operacao}: {resultado}")
-
-
