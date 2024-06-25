@@ -15,4 +15,4 @@ match operacao:
         resultado = 'Operação inválida'
 
 
-print(f"Resultado da {operacao}: {resultado}")
+print(f"Resultado da {operacao}: {resultado}")
