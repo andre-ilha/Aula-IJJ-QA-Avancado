@@ -22,13 +22,12 @@ print("Email válido.")
 #Documentação dos Resultados dos Testes
 
 #Teste de Sucesso:
-
 #Dado: Email usuario@jogajuntoinstituto.org
 #Resultado Esperado: Email válido
 #Resultado Obtido: Email válido
 #Status: Passou
-#Teste de Falha:
 
+#Teste de Falha:
 #Dado: Email usuario@gmail.com
 #Resultado Esperado: Email inválido
 #Resultado Obtido: Email inválido
