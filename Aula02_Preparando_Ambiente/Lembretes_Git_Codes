@@ -1,0 +1,8 @@
+git init (Adicionar um novo repositorio)
+git add .
+git commit -m "Ola"
+git push
+
+git checkout -b nomedabranch (cria branch)
+git branch -D nomedabranch (deletar brach)
+git merge nomedabranch (merge a branch na main)

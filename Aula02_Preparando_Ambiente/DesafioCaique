@@ -1,0 +1,55 @@
+Desafio do Caique
+
+Escrevam um PROMPT no chatGPT, em busca da definição dos três conceitos abaixo, relacionados com o uso do Git:
+
+TRACKING - COMMIT - BRANCHES - MERGE
+
+Em seguida, discutam sobre os temas e escolham um integrante do SQUAD que, caso sorteado, deverá explicar para a turma o conceito, dando um exemplo.
+
+#Atividade abaixo:
+
+
+defina o conceito da palavra TRACKING ultilizado pelo git
+ChatGPT
+ChatGPT
+Em Git, o termo "tracking" se refere à associação entre uma ramificação local (branch) e uma ramificação remota (remote branch). Quando você clona um repositório remoto ou cria uma nova ramificação a partir de uma ramificação remota, por padrão, o Git estabelece uma relação de rastreamento entre a ramificação local e sua contraparte remota. Isso permite que o Git acompanhe as alterações na ramificação remota e mantenha você atualizado sobre o estado da ramificação local em relação a ela.
+
+Por exemplo, se você tem uma ramificação local chamada "feature" que está rastreando a ramificação remota "origin/feature", o Git saberá automaticamente para onde enviar as atualizações quando você usar comandos como git push e git pull. Além disso, ao usar comandos como git status ou git branch, o Git fornecerá informações sobre como a ramificação local diverge ou está à frente da ramificação remota.
+
+Em resumo, o conceito de "tracking" em Git é fundamental para manter as ramificações locais alinhadas com as ramificações remotas e facilitar a colaboração entre vários desenvolvedores em um projeto.
+
+Você
+defina o conceito da palavra COMMIT ultilizado pelo git
+ChatGPT
+ChatGPT
+Em Git, um "commit" é uma operação fundamental que registra uma alteração ou conjunto de alterações em um repositório. Cada commit no Git é uma captura do estado do repositório em um determinado momento no tempo. Ele inclui as mudanças feitas nos arquivos do projeto, juntamente com uma mensagem descritiva que geralmente fornece informações sobre o que foi alterado e por quê.
+
+Quando você faz um commit no Git, está efetivamente criando um ponto de verificação no histórico do projeto. Isso permite que você mantenha um registro claro das mudanças feitas ao longo do tempo e facilita a colaboração com outros membros da equipe, pois cada commit é uma unidade atômica de trabalho que pode ser revisada, revertida ou integrada separadamente.
+
+Além disso, os commits no Git são identificados por hashes SHA-1 únicos, o que garante sua integridade e permite referenciá-los facilmente em operações como ramificação, fusão e histórico de revisão.
+
+Em resumo, um commit no Git é uma ação essencial que permite aos desenvolvedores registrar e controlar o progresso de seus projetos, facilitando a colaboração e o gerenciamento de código-fonte.
+
+Você
+defina o conceito da palavra Branches ultilizado pelo git
+ChatGPT
+ChatGPT
+Em Git, um "branch" (ramificação) é uma linha independente de desenvolvimento que diverge do estado principal do projeto. Cada ramificação representa uma versão paralela do código-fonte, onde as alterações podem ser feitas sem afetar diretamente o estado do projeto principal.
+
+Quando você cria uma ramificação no Git, está efetivamente criando uma cópia separada do código-fonte do projeto. Isso permite que você trabalhe em novas funcionalidades, correções de bugs ou experimentos sem interferir no trabalho que está ocorrendo em outras partes do projeto. Cada ramificação tem seu próprio histórico de commits, o que significa que você pode revisar, reverter ou integrar o trabalho feito em uma ramificação de volta ao ramo principal (geralmente chamado de "master" ou "main") quando estiver pronto.
+
+As ramificações são úteis para organizar o trabalho em equipe, pois permitem que diferentes desenvolvedores trabalhem em tarefas separadas simultaneamente sem causar conflitos diretos uns com os outros. Além disso, elas facilitam a experimentação e o desenvolvimento iterativo, pois permitem que você teste novas ideias em um ambiente isolado antes de incorporá-las ao código principal.
+
+Em resumo, as ramificações no Git são uma ferramenta poderosa para o gerenciamento de projetos, permitindo um fluxo de trabalho flexível e colaborativo, onde o desenvolvimento pode progredir de forma paralela e controlada.
+
+Você
+defina o conceito da palavra merge ultilizado pelo git
+ChatGPT
+ChatGPT
+Em Git, "merge" (fusão) é o processo de combinar as alterações de duas ou mais ramificações em uma única ramificação. Isso geralmente é feito para incorporar o trabalho feito em uma ramificação de desenvolvimento de volta à ramificação principal do projeto.
+
+Quando você realiza um merge no Git, o sistema automaticamente tenta combinar as alterações das ramificações envolvidas. Em alguns casos, isso pode ser feito automaticamente sem conflitos, especialmente se as alterações em cada ramificação não interferirem entre si. No entanto, se houver conflitos - ou seja, alterações conflitantes nas mesmas partes dos arquivos - o Git solicitará que você resolva esses conflitos manualmente, escolhendo quais alterações manter ou mesclar.
+
+Depois que os conflitos são resolvidos e o merge é concluído com sucesso, as alterações das ramificações mescladas são incorporadas à ramificação de destino. Isso cria um novo commit de merge no histórico do projeto, que registra a fusão das alterações e serve como um ponto de referência para o estado do projeto após a fusão.
+
+O merge é uma operação fundamental em Git, essencial para integrar o trabalho de diferentes desenvolvedores e ramificações em um projeto compartilhado. Ele permite que equipes colaborem em paralelo enquanto mantêm o controle sobre as mudanças e o histórico do código-fonte.
