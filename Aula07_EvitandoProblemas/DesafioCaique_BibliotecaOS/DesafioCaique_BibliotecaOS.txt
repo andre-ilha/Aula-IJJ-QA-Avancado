@@ -1,0 +1,4 @@
+Nome: Andre, Idade: 39, Cidade: Ilhabela
+Nome: Alice, Idade: 31, Cidade: Sao Sebastiao
+Nome: Gustavo, Idade: 38, Cidade: Sao Bernardo do Campo
+Nome: Gabriel, Idade: 40, Cidade: Florianopolis
