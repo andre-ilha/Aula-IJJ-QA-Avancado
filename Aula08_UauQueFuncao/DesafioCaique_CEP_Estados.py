@@ -1,4 +1,5 @@
-#A partir de uma requisição na API, pesquisando pelo CEP, verificar se o estado da pesquisa fica nas regiões norte e nordeste, para  assim verificar se o estado está incluso na política de frete grátis
+#A partir de uma requisição na API, pesquisando pelo CEP, verificar se o estado da pesquisa fica nas regiões norte e nordeste, 
+# para  assim verificar se o estado está incluso na política de frete grátis
 
 #Região Centro-Oeste: Distrito Federal, Goiás, Mato Grosso, Mato Grosso do Sul
 #Região Nordeste: Alagoas, Bahia, Ceará, Maranhão, Pernambuco, Piauí, Rio Grande do Norte, Sergipe

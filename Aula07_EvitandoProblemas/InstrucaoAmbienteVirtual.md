@@ -20,4 +20,5 @@ pip show nome_do_pacote (exibir detalhes sobre o pacote)
 pip freeze > requirements.txt (exibir lista de pacotes instalados)
 
 pip install requests (instalando a biblioteca Requests)
+pip install pandas  
 
