@@ -10,7 +10,7 @@ dados = [
 ]
 
 #Diretório onde o arquivo será salvo
-diretorio = 'DesafioCaique_BibliotecaOS'
+diretorio = '.\Aula-IJJ-QA-Avancado\Aula07_EvitandoProblemas\DesafioCaique_BibliotecaOS'
 
 #Cria a pasta se ela não exitir
 if not os.path.exists(diretorio):
