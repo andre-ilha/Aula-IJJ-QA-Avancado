@@ -61,5 +61,6 @@ def loginuserapi():
         print('Status code:', response.status_code)
         print('Resposta:', response.json())
         salvar_txt('reposta_api.txt', json.dumps(response.json(), indent=4))
+
 if criaruserapi():
      loginuserapi()
