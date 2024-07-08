@@ -23,7 +23,7 @@ def criarpersona() -> dict:
 usuario = criarpersona()
 
 def salvar_txt(logjson, conteudo):
-    with open(logjson, 'a') as arquivo:
+    with open(logjson, 'w') as arquivo:
         arquivo.write(conteudo + '\n')
     print(f'Dados salvo em {logjson}.')
 
@@ -34,13 +34,13 @@ def criaruserapi():
     if response.status_code == 201:
         print('Usuário criado com sucesso!')
         print(response.json())
-        salvar_txt('reposta_api.txt', json.dumps(response.json(), indent=4))
+        salvar_txt('log_criacao.txt', json.dumps(response.json(), indent=4))
         return True
     else:
         print('Falha ao criar usuário.')
         print('Status code: ', response.status_code)
         print('Resposta: ', response.json())
-        salvar_txt('reposta_api.txt', json.dumps(response.json(), indent=4))
+        salvar_txt('log_login.txt', json.dumps(response.json(), indent=4))
         return False
 
 def loginuserapi():
