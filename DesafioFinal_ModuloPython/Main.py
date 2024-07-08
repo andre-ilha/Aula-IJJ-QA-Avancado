@@ -20,14 +20,12 @@ def criarpersona() -> dict:
     }
     return data
 
-usuario = criarpersona()
-
-def salvar_txt(logjson, conteudo):
+def salvar_txt(logjson: str, conteudo: str):
     with open(logjson, 'w') as arquivo:
         arquivo.write(conteudo + '\n')
     print(f'Dados salvo em {logjson}.')
 
-def criaruserapi():
+def criaruserapi() -> bool:
     endpoint_criaruser = "https://desafiopython.jogajuntoinstituto.org/api/users/"
     response = requests.post(endpoint_criaruser, json=usuario)
 
@@ -62,5 +60,6 @@ def loginuserapi():
         print('Resposta:', response.json())
         salvar_txt('reposta_api.txt', json.dumps(response.json(), indent=4))
 
+usuario = criarpersona()
 if criaruserapi():
      loginuserapi()
