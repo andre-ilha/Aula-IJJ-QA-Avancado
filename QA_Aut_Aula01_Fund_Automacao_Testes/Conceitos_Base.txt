@@ -1,0 +1,19 @@
+# ETAPA 1: INDIVIDUAL
+# Sem realizar qualquer pesquisa, escreva em uma folha ou bloco de notas o que você acha que é a importância e os benefícios da automação de testes.
+
+A automação de testes é muito importante para garantir que os testes sejam efetuados mais rapidamente, garantindo uma eficiência maior nos testes, e uma rapidez maior nos feedbacks.
+Como benefícios, podemos citar redução de custos, apesar de que escrever o código possa levar um tempo grande, na automação podemos reutilizar os codigos, a cada versão nova do produto, levando o custo a longo prazo ser muito menor. E tambem utilizando a automação, podemos automatizar a documentação, criando relatórios mais rapidos para auditorias.
+
+-----------------------------------
+
+#ETAPA 2: EM TRIOS
+#Compartilhem entre si o que escreveram, encontrem um ponto comum entre o tudo o que foi escrito e criem uma explicação única, detalhando o que vocês consideram em relação à importância e possíveis benefícios da automação de testes. 
+
+
+-----------------------------------
+
+#ETAPA 3: EM TRIOS
+#Agora, vocês devem pesquisar na internet:
+#Qual é a importância e os benefícios da automação de testes.
+#Que ferramentas são mais usadas.
+#Em seguida, comparem com a definição criada por vocês na etapa anterior e aprimorem. 
