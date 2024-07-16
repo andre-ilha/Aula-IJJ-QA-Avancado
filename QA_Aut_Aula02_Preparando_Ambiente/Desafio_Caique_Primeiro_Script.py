@@ -43,7 +43,7 @@ input_msg = browser.find_element(By.ID, "mensagem")
 input_msg.send_keys('Meu primeiro script de automação - Squad 6')
 
 button_enviar = browser.find_element(By.XPATH, "//button[@type='submit']")
-button_enviar.click()
+button_enviar.submit()
 
 time.sleep(10)
 
