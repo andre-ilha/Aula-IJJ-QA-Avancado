@@ -1,13 +1,12 @@
-from selenium.webdriver import Firefox
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
-import time
 from behave import given, when, then
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select, WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
 
 @given('nos estamos com a pagina do instituto aberta')
 def step_impl(context):
-    context.browser = Firefox()
-    context.browser.get('https://www.jogajuntoinstituto.org/')
+    
     title = context.browser.title
     assert 'Instituto Joga Junto' in title, "Página incorreta na busca"
 
@@ -28,8 +27,10 @@ def step_impl(context):
 
 @then('apertamos o botão de enviar')
 def step_impl(context):
+    #import ipdb;ipdb.sset_trace()
     button_enviar = context.browser.find_element(By.XPATH, "//button[@type='submit']")
     button_enviar.submit()
 
-    time.sleep(10)
-    context.browser.quit()
+    wait = WebDriverWait(context.browser, 10)
+    alert = wait.until(EC.alert_is_present())
+    assert 'Dados recebidos' in alert.text, "Dados não recebido"

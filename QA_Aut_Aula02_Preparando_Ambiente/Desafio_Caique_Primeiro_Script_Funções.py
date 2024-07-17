@@ -1,3 +1,6 @@
+#estudar codigo
+
+
 from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -73,7 +76,7 @@ def main():
         else:
             print("Resultado desejado não encontrado.")
     finally:
-        time.sleep(10)  # Manter o navegador aberto por mais 10 segundos para visualização
+        time.sleep(10)
         browser.quit()
 
 if __name__ == "__main__":
